@@ -1,6 +1,6 @@
 <div align="center">
 
-# ☕ joe Linux
+# joe Linux
 
 ### Boring, on purpose.
 
@@ -31,21 +31,21 @@ using it. The parts you touch are ordinary: glibc, systemd, a usr-merged file
 system and GNOME on Wayland, laid out the way most people already expect. The
 interesting work lives underneath, where it belongs.
 
-## 🧪 Interesting underneath
+## Interesting underneath
 
-- 🔁 **Upgrades that undo themselves.** An upgrade is applied to a btrfs
+- **Upgrades that undo themselves.** An upgrade is applied to a btrfs
   snapshot at shutdown and takes effect on reboot. If the new system does not
   boot, the machine returns to the previous one by itself. The running root
   stays an ordinary, writable file system.
-- 📦 **Meet dave.** A package manager written in Zig with a PubGrub solver,
+- **Meet dave.** A package manager written in Zig with a PubGrub solver,
   designed around that update model from day one. It shows you the plan
   before it changes anything, and tells you exactly why when something cannot
   be done.
-- 🔐 **Root has rules, too.** A kernel security module lets privileged
+- **Root has rules, too.** A kernel security module lets privileged
   processes run only code the distribution has signed, refuses code generated
   at run time, and holds each program to the operations it declares.
 
-## 💬 A taste of dave
+## A taste of dave
 
 ```console
 $ sudo dave install gimp
@@ -64,34 +64,34 @@ $ sudo dave rollback    # the previous system, from the next boot onward
 $ dave why zlib         # the shortest chain from something you asked for
 ```
 
-## 🗂️ Repositories
+## Repositories
 
 | Repository | What's inside |
 |------------|---------------|
 | [**joe-linux**](https://github.com/theJoeLinuxFoundation/joe-linux) | The distribution itself: dave, every package recipe, the security module, image specs, the installer and the test suites. |
 | [**.github**](https://github.com/theJoeLinuxFoundation/.github) | This profile page. |
 
-## 🚦 Where things stand
+## Where things stand
 
 joe Linux is **alpha**. Today it:
 
-- ✅ builds from source into a console system and a GNOME desktop that boot in a virtual machine
-- ✅ passes end to end tests for upgrade, rollback, power loss and recovery
-- ✅ builds a live ISO whose installer puts joe beside Windows in free space, or on a whole disk
-- 🚧 has been tried on only a few real machines, with no Secure Boot or disk encryption yet
-- 🚧 still gives services broad declarations while narrower, per-service ones are written
+- builds from source into a console system and a GNOME desktop that boot in a virtual machine
+- passes end to end tests for upgrade, rollback, power loss and recovery
+- builds a live ISO whose installer puts joe beside Windows in free space, or on a whole disk
+- has been tried on only a few real machines, with no Secure Boot or disk encryption yet
+- still gives services broad declarations while narrower, per-service ones are written
 
 The full list lives in [Not done yet](https://github.com/theJoeLinuxFoundation/joe-linux#not-done-yet).
 Please hold off on putting it on a machine you rely on.
 
-## 🤝 Get involved
+## Get involved
 
-- 🐛 **Found something exciting?** That's a bug. [Open an issue](https://github.com/theJoeLinuxFoundation/joe-linux/issues/new).
-- 🔧 **Pull requests are welcome.** GitHub Actions runs dave's unit tests on every one.
-- 📖 **Start reading** with the [README](https://github.com/theJoeLinuxFoundation/joe-linux#readme); the sources it points to are commented for readers.
-- ⭐ **Follow along** by starring [joe-linux](https://github.com/theJoeLinuxFoundation/joe-linux).
+- **Found something exciting?** That's a bug. [Open an issue](https://github.com/theJoeLinuxFoundation/joe-linux/issues/new).
+- **Pull requests are welcome.** GitHub Actions runs dave's unit tests on every one.
+- **Start reading** with the [README](https://github.com/theJoeLinuxFoundation/joe-linux#readme); the sources it points to are commented for readers.
+- **Follow along** by starring [joe-linux](https://github.com/theJoeLinuxFoundation/joe-linux).
 
-## 🏷️ Tags
+## Tags
 
 [`linux`](https://github.com/topics/linux)
 [`linux-distribution`](https://github.com/topics/linux-distribution)
@@ -117,6 +117,6 @@ Please hold off on putting it on a machine you rely on.
 [Arch-silverblue](https://github.com/sinisterMage/Arch-silverblue).
 joe Linux's own code is MIT licensed; the security module is GPL-2.0-only, as part of the kernel.</sub>
 
-**☕ Here's to nothing out of the ordinary.**
+**Here's to nothing out of the ordinary.**
 
 </div>
